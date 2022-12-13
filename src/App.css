@@ -7,10 +7,11 @@ body {
 :root {
   --primary-black: rgb(1, 1, 0);
   --primary-white: rgb(255, 255, 255);
+  --primary-light-gray: rgb(228, 228, 228);
   --primary-orange: #f9ab00;
   --primary-red: #d34343;
   --primary-red-hover: #b01212;
-  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-dark: rgb(56, 56, 56);
 }
 
 /* ----------------------- NAVBAR ------------------------------  */
@@ -38,7 +39,7 @@ nav ul li {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
   color: var(--primary-black) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  border-top: 0.01rem solid rgba(0, 0, 0, 0);
   text-align: center;
 }
 
@@ -50,11 +51,12 @@ nav ul li {
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.01rem solid var(--primary-orange);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.01rem solid var(--primary-orange);
+  color: var(--primary-orange) !important;
 }
 /* ----------------------- HEADER ------------------------------  */
 
@@ -131,6 +133,59 @@ nav ul li {
   font-size: 1.2rem;
   line-height: 2rem;
 }
+/* ----------------------- SERVICES ------------------------------  */
+.services {
+  text-align: center;
+  padding-bottom: 2rem;
+  background: var(--primary-light-gray);
+}
+.services h1 {
+  color: var(--primary-dark);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.services .circle {
+  position: relative;
+  margin: 0.575rem auto;
+  background: var(--primary-orange);
+  border-radius: 50%;
+  height: 5.125rem;
+  width: 5.125rem;
+}
+
+.services .icon {
+  color: var(--primary-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services .box {
+  height: 16rem;
+  border-bottom: 0.3125rem solid var(--primary-orange);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: var(--primary-white);
+}
+
+.services .box:hover {
+  background: var(--primary-orange);
+  border-bottom: 0.3125rem solid var(--primary-dark);
+}
+
+.box h3 {
+  font-weight: 300;
+}
+
+.services .box:hover .icon {
+  color: var(--primary-dark);
+}
+.services .box:hover .circle {
+  background: var(--primary-white);
+}
+
 /* ----------------------- DISPLAY ------------------------------  */
 
 @media (max-width: 768px) {
@@ -147,5 +202,13 @@ nav ul li {
 @media (max-width: 468px) {
   .profile-img {
     width: 10rem;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-nav > li > a {
+    border: none;
+  }
+  .navbar-nav > li > a:hover {
+    border: none;
   }
 }
