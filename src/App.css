@@ -127,7 +127,10 @@ nav ul li {
   text-transform: uppercase;
   font-weight: 300;
 }
-
+.about-p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
 /* ----------------------- DISPLAY ------------------------------  */
 
 @media (max-width: 768px) {

@@ -11,12 +11,14 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="col-lg-6 col-xm-12">
-          <h1 className="about-heading">Who i am </h1>
-          <p>
-            Nice to meet you, my name is Brian. I graduated the University of
-            West in Timisoara, with a degree in Computer Science. I'm a Front
-            End Developer, and, because I'm in love with the web development,
-            I'm also building up my Back End skills.
+          <h1 className="about-heading text-center">Who i am </h1>
+          <p className="about-p">
+            Nice to meet you, my name is Brian.
+            <br /> I graduated the University of West in Timisoara, with a
+            degree in Computer Science and right now I'm a Front End Developer.{" "}
+            <br />
+            Because I'm in love with the web development, I'm also building up
+            my Back End skills.
             <br /> I think that the main satisfy that push me to grow up ever
             and ever, is that to solve solutions for people problems with the
             delivered software.
