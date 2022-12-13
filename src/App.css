@@ -5,12 +5,16 @@ body {
 }
 
 :root {
-  --primary-white: rgb(1, 1, 0);
+  --primary-black: rgb(1, 1, 0);
+  --primary-white: rgb(255, 255, 255);
   --primary-orange: #f9ab00;
+  --primary-red: #d34343;
+  --primary-red-hover: #b01212;
   --primary-dark: rgba(255, 255, 255, 0);
 }
 
-* ----------------------- NAVBAR ------------------------------ */ .logo {
+/* ----------------------- NAVBAR ------------------------------  */
+.logo {
   width: 16.25rem;
 }
 
@@ -29,8 +33,9 @@ nav ul li {
 .navbar-nav > li > a {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-  color: var(--primary-white) !important;
+  color: var(--primary-black) !important;
   border-top: 0.1875rem solid var(--primary-dark);
+  text-align: center;
 }
 
 .navbar-brand {
@@ -46,4 +51,66 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+/* ----------------------- HEADER ------------------------------  */
+
+.header-wraper {
+  position: relative;
+  background: url("./images/headerWallpaper.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 92vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+}
+.main-info h1 {
+  color: var(--primary-white);
+  font-weight: 300;
+}
+
+/* ----------------------- TYPED TEXT ------------------------------  */
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-orange);
+}
+
+/* ----------------------- HEADER MAIN OFFER BTN ------------------------------  */
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-red-hover);
+  transition: 0.4s ease-in-out;
+  color: var(--primary-white);
+}
+
+/* ----------------------- DISPLAY ------------------------------  */
+
+@media (max-width: 768px) {
+  .main-info > h1 {
+    font-size: 2.2rem !important;
+  }
+  .typed-text {
+    font-size: 1.8rem;
+  }
 }
