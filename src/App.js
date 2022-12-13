@@ -1,7 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
-import About from "./components/About";
+import AboutMe from "./components/AboutMe";
+
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-      <About />
+      <AboutMe />
     </div>
   );
 }
