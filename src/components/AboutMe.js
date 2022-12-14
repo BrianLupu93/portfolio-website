@@ -3,7 +3,7 @@ import brian from "../images/brian.jpeg";
 
 const AboutMe = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5" id="about">
       <div className="row">
         <div className="col-lg-6 col-xm-12">
           <div className="photo-wrap mb-5">
@@ -19,9 +19,9 @@ const AboutMe = () => {
             <br />
             Because I'm in love with the web development, I'm also building up
             my Back End skills.
-            <br /> I think that the main satisfy that push me to grow up ever
-            and ever, is that to solve solutions for people problems with the
-            delivered software.
+            <br id="services" /> I think that the main satisfy that push me to
+            grow up ever and ever, is that to solve solutions for people
+            problems with the delivered software.
           </p>
         </div>
       </div>

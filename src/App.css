@@ -60,6 +60,7 @@ body {
 }
 
 .logo {
+  cursor: pointer;
   display: flex;
   width: 4.25rem;
 }
