@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -27,30 +28,40 @@ const Footer = () => {
           <div className="col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a href="#" className="footer-nav">
+                <Link to="home" smooth={true} className="footer-nav">
                   Home
-                </a>
+                </Link>
                 <br />
-                <a href="#about" className="footer-nav">
+                <Link
+                  to="about"
+                  smooth={true}
+                  offset={-82}
+                  className="footer-nav"
+                >
                   About me
-                </a>
+                </Link>
                 <br />
-                <a href="#services" className="footer-nav">
+                <Link to="services" smooth={true} className="footer-nav">
                   Services
-                </a>
+                </Link>
               </div>
               <div className="col">
-                <a href="#experience" className="footer-nav">
+                <Link
+                  to="experience"
+                  smooth={true}
+                  offset={-82}
+                  className="footer-nav"
+                >
                   Experience
-                </a>
+                </Link>
                 <br />
-                <a href="#portfolio" className="footer-nav">
+                <Link to="portfolio" smooth={true} className="footer-nav">
                   Portfolio
-                </a>
+                </Link>
                 <br />
-                <a href="#contact" className="footer-nav">
+                <Link to="contact" smooth={true} className="footer-nav">
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
