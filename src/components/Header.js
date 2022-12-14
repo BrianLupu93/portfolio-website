@@ -7,7 +7,7 @@ const Header = () => {
       <div className="main-info">
         <h1>Design and Development Solutions</h1>
         <Typed
-          className="typed-text"
+          className="typed-text primary-gradient"
           typeSpeed={40}
           backSpeed={60}
           loop

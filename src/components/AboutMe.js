@@ -11,7 +11,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="col-lg-6 col-xm-12">
-          <h1 className="about-heading">Who i am </h1>
+          <h1 className="about-heading">about me</h1>
           <p className="about-p">
             Nice to meet you, my name is Brian.
             <br /> I graduated the University of West in Timisoara, with a
