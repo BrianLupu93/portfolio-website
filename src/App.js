@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
 import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -19,6 +20,7 @@ function App() {
       <Experience />
       <Portfolio />
       <Testimonials />
+      <Contact />
     </div>
   );
 }

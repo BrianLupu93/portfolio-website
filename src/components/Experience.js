@@ -43,7 +43,7 @@ const Experience = () => {
         <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2022</h3>
+            <h3 id="portfolio">2022</h3>
             <p>
               Front-end developer at GRGL-development
               <br />
