@@ -592,6 +592,7 @@ textarea.form-control {
 
 .footer a {
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--primary-light-gray);
 }
 
