@@ -4,6 +4,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
@@ -21,6 +22,7 @@ function App() {
       <Portfolio />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-scroll";
 import logo from "../images/logo.png";
 
 const Navbar = () => {
@@ -7,13 +8,13 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-xl  navbar-light  sticky-top">
       {/* <div className="container"> */}
       <div className="navbar-brand logo">
-        <a className="navbar-brand logo" href="#">
+        <Link className="navbar-brand logo" href="#">
           <img className="logo-img" src={logo} alt="logo" />
           <div className="logo-container">
             <p className="logo-name">brian lupu</p>
             <p className="logo-slogan ">web development</p>
           </div>
-        </a>
+        </Link>
       </div>
       <button
         className="navbar-toggler"
@@ -30,34 +31,39 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav  ml-auto ">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
+            <Link smooth={true} to="home" offset={-100} className="nav-link">
               home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#about">
+            <Link smooth={true} to="about" offset={-82} className="nav-link">
               about me
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#services">
+            <Link smooth={true} to="services" className="nav-link">
               services
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#experience">
+            <Link
+              smooth={true}
+              to="experience"
+              offset={-82}
+              className="nav-link"
+            >
               experience
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#portfolio">
+            <Link smooth={true} to="portfolio" className="nav-link">
               portfolio
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#contact">
+            <Link smooth={true} to="contact" className="nav-link">
               contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

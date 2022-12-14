@@ -583,6 +583,28 @@ textarea.form-control {
   margin: -0.3rem 0;
 }
 
+/* ----------------------- FOOTER ------------------------------  */
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-light-gray);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-light-gray);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
 /* ----------------------- MEDIA DISPLAY ------------------------------  */
 
 @media (max-width: 768px) {
