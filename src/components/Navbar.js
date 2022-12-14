@@ -1,6 +1,5 @@
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 
 const Navbar = () => {
