@@ -3,6 +3,9 @@ import imgPort1 from "../images/port1.jpg";
 import imgPort2 from "../images/port2.jpg";
 import imgPort3 from "../images/port3.jpg";
 import imgPort4 from "../images/port4.jpg";
+import html from "../images/html.png";
+import css from "../images/css.png";
+import react from "../images/react.png";
 import { BsZoomIn } from "react-icons/bs";
 import Modal from "./Modal";
 
@@ -66,9 +69,9 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio-wrapper" >
+    <div className="portfolio-wrapper">
       <div className="container">
-        <h1 className="text-uppercase text-center py-5">portfolio</h1>
+        <h1 className="text-uppercase text-center py-2">portfolio</h1>
         <div className="image-box-wrapper row justify-content-center  ">
           {portfolio?.map((item, i) => {
             return (
@@ -78,35 +81,22 @@ const Portfolio = () => {
                 className="portfolio-image-box"
                 onClick={(e) => openModalFrame(portfolio, e)}
               >
+                <h4 className="text-center portfolio-title">{item.title}</h4>
                 <img
                   className="portfolio-image"
                   src={item.image}
                   alt={item.title}
                 />
+                <div className="d-flex justify-content-center mt-3">
+                  <img src={html} alt="htm;" className="tech-icon mx-2" />
+                  <img src={css} alt="css;" className="tech-icon mx-2" />
+                  <img src={react} alt="react;" className="tech-icon mx-2" />
+                </div>
                 <div className="overflow"></div>
                 <BsZoomIn className="portfolio-icon" />
               </div>
             );
           })}
-
-          {/*           
-          <div className="portfolio-image-box">
-            <img className="portfolio-image" src={imgPort2} alt="img2" />
-            <div className="overflow"></div>
-            <BsZoomIn className="portfolio-icon" />
-          </div>
-        
-          <div className="portfolio-image-box">
-            <img className=" portfolio-image" src={imgPort3} alt="img3" />
-            <div className="overflow"></div>
-            <BsZoomIn className="portfolio-icon" />
-          </div>
-         
-          <div className="portfolio-image-box">
-            <img className="portfolio-image" src={imgPort4} alt="img4" />
-            <div className="overflow"></div>
-            <BsZoomIn className="portfolio-icon" />
-          </div> */}
         </div>
       </div>
       <Modal open={openModal} setOpen={setOpenModal} items={portfolio} />

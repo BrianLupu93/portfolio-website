@@ -5,26 +5,13 @@ body {
 }
 
 :root {
-  --primary-black: rgb(1, 1, 0);
-  --primary-white: rgb(255, 255, 255);
-  --primary-gray: rgb(189, 189, 189);
-  --primary-light-gray: rgb(228, 228, 228);
-  --primary-dark-gray: rgb(123, 123, 123);
-  --primary-violet: #786af1;
-  --primary-light-violet: #978cfb;
-  --secondary-violet: #ca9cfb;
-  --primary-orange: #e76006;
-  --primary-dark: rgb(56, 56, 56);
-
-  --primary-orange--gradient: linear-gradient(ro right, #e76006, #df760cea);
-  --secondary-gradient: linear-gradient(to right, #978cfb, #ca9cfb);
-  --primary-gradient: linear-gradient(to right, #786af1, #ca9cfb);
-}
-
-.primary-gradient {
-  background: -webkit-linear-gradient(#786af1, #ca9cfb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  --primary-white: #ffffff;
+  --primary-black: #000000;
+  --primary-dark-gray: #323232;
+  --primary-light-gray: #9e9e9e;
+  --primary-orange: #ffac41;
+  --primary-red: #ff1e56;
+  --primary-red-logo: #e3325e;
 }
 
 /* ----------------------- NAVBAR ------------------------------  */
@@ -33,7 +20,7 @@ body {
 }
 
 .navbar {
-  background: rgba(238, 238, 238, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 .logo-container {
   display: flex;
@@ -53,12 +40,13 @@ body {
   letter-spacing: 0.1rem;
   margin-top: 0.8rem;
   margin-bottom: 0.1rem;
-  color: var(--primary-blak);
+  color: var(--primary-white);
 }
 .logo-slogan {
   font-size: 0.8rem;
   letter-spacing: 0.3rem;
   margin-top: -1rem;
+  color: var(--primary-red-logo);
 }
 
 .logo {
@@ -82,7 +70,7 @@ nav ul li {
 .navbar-nav > li > a {
   margin-left: 0.55rem;
   margin-right: 0.55rem;
-  color: var(--primary-black) !important;
+  color: var(--primary-white) !important;
   border-top: 0.01rem solid rgba(0, 0, 0, 0);
   text-align: center;
 }
@@ -95,15 +83,13 @@ nav ul li {
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
-  border-top: 0.01rem solid var(--primary-violet);
+  border-top: 0.01rem solid var(--primary-orange);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.01rem solid var(--secondary-violet);
+  border-top: 0.01rem solid var(--primary-orange);
 
-  background: -webkit-linear-gradient(#786af1, #ca9cfb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent !important;
+  color: var(--primary-orange) !important;
 }
 /* ----------------------- HEADER ------------------------------  */
 
@@ -136,11 +122,12 @@ nav ul li {
 
 .typed-text {
   font-size: 2rem;
+  color: var(--primary-orange);
 }
 
 /* ----------------------- HEADER MAIN OFFER BTN ------------------------------  */
 .btn-main-offer {
-  border: 1px solid var(--primary-orange);
+  border: 1px solid var(--primary-red);
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
@@ -150,7 +137,7 @@ nav ul li {
 
 .btn-main-offer:hover {
   text-decoration: none;
-  background: var(--primary-orange);
+  background: var(--primary-red);
   transition: 0.4s ease-in-out;
   color: var(--primary-white);
 }
@@ -167,7 +154,7 @@ nav ul li {
   width: 16rem;
   border-radius: 50%;
   padding: 0.3rem;
-  border: 1px solid var(--primary-violet);
+  border: 1px solid var(--primary-orange);
 }
 
 .about-heading {
@@ -183,10 +170,10 @@ nav ul li {
 .services {
   text-align: center;
   padding-bottom: 2rem;
-  background: var(--primary-gray);
+  background: var(--primary-dark-gray);
 }
 .services h1 {
-  color: var(--primary-dark);
+  color: var(--primary-white);
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -194,7 +181,7 @@ nav ul li {
 .services .circle {
   position: relative;
   margin: 0.575rem auto;
-  background: var(--primary-gradient);
+  background: var(--primary-orange);
   border-radius: 50%;
   height: 5.125rem;
   width: 5.125rem;
@@ -210,7 +197,7 @@ nav ul li {
 
 .services .box {
   height: 16rem;
-  border-bottom: 0.3125rem solid var(--primary-violet);
+  border-bottom: 0.3125rem solid var(--primary-orange);
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
@@ -218,7 +205,7 @@ nav ul li {
 }
 
 .services .box:hover {
-  background: var(--secondary-gradient);
+  background: var(--primary-orange);
   border-bottom: 0.3125rem solid var(--primary-white);
 }
 
@@ -259,12 +246,12 @@ nav ul li {
   margin-left: -0.0625rem;
   width: 0.125rem;
   height: 100%;
-  background: var(--primary-gray);
+  background: var(--primary-dark-gray);
   z-index: 1;
 }
 
 .timeline-content p {
-  color: var(--primary-dark);
+  color: var(--primary-dark-gray);
 }
 
 .timeline-block {
@@ -287,8 +274,8 @@ nav ul li {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: 0.3125rem solid var(--primary-dark);
-  background: var(--primary-orange);
+  border: 0.3125rem solid var(--primary-orange);
+  background: var(--primary-black);
   margin-top: 0.625rem;
   z-index: 3;
 }
@@ -296,36 +283,53 @@ nav ul li {
 .timeline-content {
   width: 95%;
   padding: 0 0.9375rem;
-  color: var(--primary-gray);
+  color: var(--primary-dark-gray);
   direction: ltr;
 }
 .timeline-content h3 {
   margin-top: 0.3125rem;
-  color: var(--primary-violet);
+  color: var(--primary-red);
   font-weight: 300;
 }
 /* ----------------------- PORTFOLIO ------------------------------  */
 
 .portfolio-wrapper {
-  background: var(--primary-gray);
-  padding: 3rem 0;
+  background: var(--primary-dark-gray);
+  padding: 2rem 0;
+}
+.portfolio-image-box {
+  background: var(--primary-white);
+  height: 20rem;
+  width: 15rem;
+  position: relative;
+  margin: 1rem;
+  z-index: 3;
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box > h4 {
+  color: var(--primary-dark-gray);
+  font-weight: 300;
+  border-bottom: 0.0165rem solid var(--primary-dark-gray);
+}
+
+.portfolio-title {
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .portfolio-image {
-  width: 15rem;
+  background-color: var(--primary-light-gray);
+  width: 14rem;
   height: 10rem;
-  border: 1px solid var(--primary-gray);
-  padding: 0.5rem 0.5rem;
-}
-.portfolio-image-box {
-  position: relative;
-  margin: 1em;
-  z-index: 3;
+  /* border: 1px solid var(--primary-dark-gray); */
+  padding: 0;
+  margin-top: 1rem;
 }
 
 .portfolio-wrapper .container h1 {
   font-weight: 300;
-  color: var(--primary-dark);
+  color: var(--primary-orange);
 }
 
 .overflow {
@@ -333,8 +337,9 @@ nav ul li {
   opacity: 0;
   background: var(--primary-black);
   width: 15rem;
-  height: 10rem;
+  height: 20rem;
   top: 0;
+  left: 0;
   border: 1px solid var(--primary-black);
   cursor: pointer;
   z-index: 3;
@@ -347,8 +352,8 @@ nav ul li {
 .portfolio-icon {
   position: absolute;
   opacity: 0;
-  margin-left: -4rem;
-  margin-top: 6.6rem;
+  margin-left: -3.5rem;
+  margin-top: 12rem;
   color: var(--primary-orange);
   font-size: 2rem;
   z-index: 3;
@@ -359,10 +364,15 @@ nav ul li {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+
+.tech-icon {
+  width: 2rem;
+}
+
 /* ----------------------- MEDIA DISPLAY ------------------------------  */
 
 .overlay {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -442,7 +452,7 @@ nav ul li {
 }
 
 .testimonials h1 {
-  color: var(--primary-dark);
+  color: var(--primary-black);
   padding: 3rem 0;
   text-transform: uppercase;
   font-weight: 300;
@@ -477,7 +487,7 @@ nav ul li {
 }
 
 .my-carousel p {
-  color: var(--primary-gray);
+  color: var(--primary-white);
 }
 
 .carousel .slide img {
@@ -499,18 +509,18 @@ nav ul li {
 /* ----------------------- CONTACT ------------------------------  */
 
 .contact {
-  background: var(--primary-gray);
+  background: var(--primary-dark-gray);
   pad: 3rem 0;
 }
 
 .contact h1 {
-  color: var(--primary-dark);
+  color: var(--primary-orange);
   padding: 1.3rem 0;
   font-weight: 300;
   text-transform: uppercase;
 }
 .contact p {
-  color: var(--primary-dark);
+  color: var(--primary-white);
   font-size: 1.2rem;
 }
 
@@ -521,9 +531,9 @@ nav ul li {
   background: none;
   resize: none;
   border: 0 !important;
-  border-bottom: 0.125rem solid var(--primary-dark);
+  border-bottom: 0.105rem solid var(--primary-light-gray) !important;
   border-radius: 0;
-  color: var(--primary-violet);
+  color: var(--primary-orange);
   outline: 0 !important;
   box-shadow: none !important;
   margin-bottom: 1rem;
@@ -537,8 +547,8 @@ nav ul li {
 .contact input:focus,
 .contact textarea:focus {
   background: transparent;
-  color: var(--primary-violet);
-  border-bottom: 0.125rem solid var(--primary-dark);
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-light-gray);
 }
 
 .contact textarea {
@@ -549,14 +559,15 @@ nav ul li {
   margin: 1rem 0 0 0;
   width: 100%;
   background: none;
-  color: var(--primary-dark);
+  color: var(--primary-white);
 }
+
 .line {
   position: relative;
   top: -0.8rem;
   width: 0;
   height: 0.125rem;
-  background: var(--primary-violet);
+  background: var(--primary-orange);
   display: inline-block;
 }
 
