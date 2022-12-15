@@ -333,7 +333,7 @@ nav ul li {
   margin-top: 1rem;
 }
 
-.portfolio-wrapper .container h1 {
+.portfolio-wrapper h1 {
   font-weight: 300;
   color: var(--primary-orange);
 }

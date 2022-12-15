@@ -104,8 +104,9 @@ const Navbar = () => {
               portfolio
             </Link>
           </li>
-          <li class duration={100} Name="nav-item">
+          <li className="nav-item">
             <Link
+              duration={100}
               smooth={true}
               offset={windowWidth > 415 ? -80 : -304}
               to="contact"

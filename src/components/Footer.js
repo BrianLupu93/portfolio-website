@@ -44,7 +44,7 @@ const Footer = () => {
                   duration={100}
                   to="about"
                   smooth={true}
-                  offset={windowWidth > 415 ? -82 : -307}
+                  offset={windowWidth > 415 ? -82 : -40}
                   className="footer-nav"
                 >
                   About me
@@ -54,7 +54,7 @@ const Footer = () => {
                   duration={100}
                   to="services"
                   smooth={true}
-                  offset={windowWidth > 415 ? 133 : -38}
+                  offset={windowWidth > 415 ? 133 : 190}
                   className="footer-nav"
                 >
                   Services
@@ -65,7 +65,7 @@ const Footer = () => {
                   duration={100}
                   to="experience"
                   smooth={true}
-                  offset={windowWidth > 415 ? -84 : -307}
+                  offset={windowWidth > 415 ? -84 : -70}
                   className="footer-nav"
                 >
                   Experience
@@ -75,7 +75,7 @@ const Footer = () => {
                   duration={100}
                   to="portfolio"
                   smooth={true}
-                  offset={windowWidth > 415 ? 148 : -84}
+                  offset={windowWidth > 415 ? 148 : 142}
                   className="footer-nav"
                 >
                   Portfolio
@@ -84,7 +84,7 @@ const Footer = () => {
                 <Link
                   duration={100}
                   to="contact"
-                  offset={windowWidth > 415 ? -80 : -304}
+                  offset={windowWidth > 415 ? -80 : -77}
                   smooth={true}
                   className="footer-nav"
                 >
