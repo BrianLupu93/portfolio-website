@@ -95,7 +95,7 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-wrapper">
-      <div className="container mx-0 my-5">
+      <div className="container my-5">
         <h1 className="text-uppercase text-center py-2">portfolio</h1>
         <div className="image-box-wrapper  row  justify-content-center ">
           {portfolio?.map((item, i) => {
