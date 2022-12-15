@@ -297,14 +297,20 @@ nav ul li {
   background: var(--primary-dark-gray);
   padding: 2rem 0;
 }
+
 .portfolio-image-box {
   background: var(--primary-white);
   height: 20rem;
   width: 15rem;
+  border-radius: 0.5rem;
   position: relative;
   margin: 1rem;
   z-index: 3;
   padding: 0 0.5rem;
+}
+
+.image-box-wrapper {
+  width: 100% !important;
 }
 
 .portfolio-image-box > h4 {
@@ -319,11 +325,11 @@ nav ul li {
 }
 
 .portfolio-image {
-  background-color: var(--primary-light-gray);
+  background-color: var(--primary-white);
   width: 14rem;
-  height: 10rem;
-  border: 0.062rem solid var(--primary-dark-gray);
-  padding: 0;
+  height: 9rem;
+  border: 0.0625rem solid var(--primary-dark-gray);
+  padding: 0.3rem;
   margin-top: 1rem;
 }
 
@@ -338,6 +344,7 @@ nav ul li {
   background: var(--primary-black);
   width: 15rem;
   height: 20rem;
+  border-radius: 0.5rem;
   top: 0;
   left: 0;
   border: 0.0625rem solid var(--primary-black);
@@ -352,10 +359,10 @@ nav ul li {
 .portfolio-icon {
   position: absolute;
   opacity: 0;
-  margin-left: -3.5rem;
-  margin-top: 12rem;
+  margin-left: 5rem;
+  margin-top: -8rem;
   color: var(--primary-orange);
-  font-size: 2rem;
+  font-size: 4rem;
   z-index: 3;
 }
 
@@ -366,6 +373,7 @@ nav ul li {
 }
 
 .tech-icon {
+  margin-top: 0.5rem;
   width: 2rem;
 }
 
@@ -428,7 +436,7 @@ nav ul li {
 }
 
 .modal-body img {
-  border: 0.625rem solid var(--primary-black);
+  border: 0.0625rem solid var(--primary-black);
 }
 
 .modal-body > p {

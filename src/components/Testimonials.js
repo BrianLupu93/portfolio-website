@@ -31,7 +31,7 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials">
-      <h1>what clients say</h1>
+      <h1>people testimonials</h1>
       <div className="container">
         <div className="testimonial-container">
           <TestimonialsCarousel clients={testimonials} />
