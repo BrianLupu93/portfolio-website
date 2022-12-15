@@ -31,6 +31,7 @@ const Footer = () => {
             <div className="row">
               <div className="col">
                 <Link
+                  duration={100}
                   to="home"
                   smooth={true}
                   offset={-400}
@@ -40,6 +41,7 @@ const Footer = () => {
                 </Link>
                 <br />
                 <Link
+                  duration={100}
                   to="about"
                   smooth={true}
                   offset={windowWidth > 415 ? -82 : -307}
@@ -49,6 +51,7 @@ const Footer = () => {
                 </Link>
                 <br />
                 <Link
+                  duration={100}
                   to="services"
                   smooth={true}
                   offset={windowWidth > 415 ? 133 : -38}
@@ -59,6 +62,7 @@ const Footer = () => {
               </div>
               <div className="col">
                 <Link
+                  duration={100}
                   to="experience"
                   smooth={true}
                   offset={windowWidth > 415 ? -84 : -307}
@@ -68,6 +72,7 @@ const Footer = () => {
                 </Link>
                 <br />
                 <Link
+                  duration={100}
                   to="portfolio"
                   smooth={true}
                   offset={windowWidth > 415 ? 148 : -84}
@@ -77,6 +82,7 @@ const Footer = () => {
                 </Link>
                 <br />
                 <Link
+                  duration={100}
                   to="contact"
                   offset={windowWidth > 415 ? -80 : -304}
                   smooth={true}

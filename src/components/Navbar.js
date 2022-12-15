@@ -16,6 +16,7 @@ const Navbar = () => {
           smooth={true}
           to="home"
           offset={-400}
+          duration={100}
         >
           <img className="logo-img" src={logo} alt="logo" />
           <div className="logo-container">
@@ -40,6 +41,7 @@ const Navbar = () => {
         <ul className="navbar-nav  ml-auto ">
           <li className="nav-item active">
             <Link
+              duration={100}
               smooth={true}
               to="home"
               offset={-400}
@@ -52,6 +54,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link
+              duration={100}
               smooth={true}
               to="about"
               offset={windowWidth > 415 ? -82 : -307}
@@ -64,6 +67,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link
+              duration={100}
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               smooth={true}
@@ -76,6 +80,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link
+              duration={100}
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               smooth={true}
@@ -88,6 +93,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link
+              duration={100}
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               smooth={true}
@@ -98,7 +104,7 @@ const Navbar = () => {
               portfolio
             </Link>
           </li>
-          <li className="nav-item">
+          <li class duration={100} Name="nav-item">
             <Link
               smooth={true}
               offset={windowWidth > 415 ? -80 : -304}
