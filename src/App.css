@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--primary-black);
 }
 .logo-container {
   display: flex;
@@ -154,7 +154,7 @@ nav ul li {
   width: 16rem;
   border-radius: 50%;
   padding: 0.3rem;
-  border: 1px solid var(--primary-orange);
+  border: 0.0625rem solid var(--primary-orange);
 }
 
 .about-heading {
@@ -322,7 +322,7 @@ nav ul li {
   background-color: var(--primary-light-gray);
   width: 14rem;
   height: 10rem;
-  /* border: 1px solid var(--primary-dark-gray); */
+  border: 0.062rem solid var(--primary-dark-gray);
   padding: 0;
   margin-top: 1rem;
 }
@@ -340,7 +340,7 @@ nav ul li {
   height: 20rem;
   top: 0;
   left: 0;
-  border: 1px solid var(--primary-black);
+  border: 0.0625rem solid var(--primary-black);
   cursor: pointer;
   z-index: 3;
 }
@@ -384,7 +384,7 @@ nav ul li {
   z-index: 5;
 }
 .modal-container {
-  border: 1px solid var(--primary-dark);
+  border: 0.0625rem solid var(--primary-dark);
   background: var(--primary-white);
   width: 50rem;
   position: fixed;
@@ -398,7 +398,7 @@ nav ul li {
 .modal-title {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--primary-gray);
+  border-bottom: 0.0625rem solid var(--primary-gray);
   color: var(--primary-dark);
   padding-left: 1.5rem;
 }
@@ -428,7 +428,7 @@ nav ul li {
 }
 
 .modal-body img {
-  border: 1px solid var(--primary-black);
+  border: 0.625rem solid var(--primary-black);
 }
 
 .modal-body > p {
