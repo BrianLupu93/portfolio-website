@@ -12,8 +12,8 @@ const Experience = () => {
           <div className="timeline-content">
             <h3>2017-2020</h3>
             <p>
-              West University.
-              <br /> Degree in Computer Science
+              Degree in Computer Science
+              <br /> West University, Timisoara, Romania
             </p>
           </div>
         </div>
@@ -23,7 +23,11 @@ const Experience = () => {
 
           <div className="timeline-content">
             <h3>2020-2021</h3>
-            <p>System Administrator at Continental</p>
+            <p>
+              System Administrator
+              <br />
+              Contitech Timisoara, Romania
+            </p>
           </div>
         </div>
 
@@ -36,6 +40,8 @@ const Experience = () => {
               Personal development in the Web-Dev field.
               <br />
               Front-End Internship at GRGL-development
+              <br />
+              Timisoara, Romania
             </p>
           </div>
         </div>
@@ -48,7 +54,9 @@ const Experience = () => {
               Front-end developer at GRGL-development
               <br />
               Front-End Freelancer <br />
-              Back End Bootcamp
+              Back-End Bootcamp
+              <br />
+              Timisoara, Romania
             </p>{" "}
           </div>
         </div>
