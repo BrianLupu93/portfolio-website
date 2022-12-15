@@ -6,12 +6,49 @@ import { RxMobile } from "react-icons/rx";
 import { RiShoppingCartLine } from "react-icons/ri";
 
 const Services = () => {
+  const services = [
+    {
+      icon: <GiPaintRoller className="icon" />,
+      title: "Web Design",
+      body: "Each Project design will be unique!",
+    },
+    {
+      icon: <IoDesktopOutline className="icon" />,
+      title: "Web Development",
+      body: "The web application will be build with the last proven technologies!",
+    },
+    {
+      icon: <RxMobile className="icon" />,
+      title: "Mobile Development",
+      body: "Full responisve application or just Mobile App!",
+    },
+    {
+      icon: <RiShoppingCartLine className="icon" />,
+      title: "E-commerce",
+      body: "Complete web-shops!",
+    },
+  ];
+
   return (
     <div className="services py-5">
       <h1 className="py-5">how can i help you?</h1>
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          {services?.map((service) => {
+            return (
+              <div className="col-lg-3 col-md-6 col-sm-6">
+                <div className="box">
+                  <IconContext.Provider value={{ size: "4em" }}>
+                    <div className="circle">{service.icon}</div>
+                  </IconContext.Provider>
+
+                  <h3>{service.title}</h3>
+                  <p>{service.body}</p>
+                </div>
+              </div>
+            );
+          })}
+          {/* <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <IconContext.Provider value={{ size: "4em" }}>
                 <div className="circle">
@@ -24,7 +61,7 @@ const Services = () => {
             </div>
           </div>
           {/*  */}
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          {/* <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <IconContext.Provider value={{ size: "4em" }}>
                 <div className="circle">
@@ -39,7 +76,7 @@ const Services = () => {
             </div>
           </div>
           {/*  */}
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          {/* <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <IconContext.Provider value={{ size: "4em" }}>
                 <div className="circle">
@@ -48,10 +85,10 @@ const Services = () => {
               </IconContext.Provider>
               <h3>Mobile Development</h3>
               <p>Full responsive application or just Mobile App!</p>
-            </div>
-            {/*  */}
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6">
+            </div> */}
+          {/*             
+          </div> */}
+          {/* <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <IconContext.Provider value={{ size: "4em" }}>
                 <div className="circle">
@@ -61,7 +98,7 @@ const Services = () => {
               <h3>E-commerce</h3>
               <p>Complete web-shops!</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
