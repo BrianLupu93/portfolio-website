@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-  background: var(--primary-black);
+  background: rgba(59, 59, 59, 0.9);
 }
 .logo-container {
   display: flex;
