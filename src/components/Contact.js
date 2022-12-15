@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { MdOutlineError } from "react-icons/md";
 
 const Contact = () => {
   const {
@@ -15,8 +16,6 @@ const Contact = () => {
   const SERVICE_ID = "service_ID";
   const TEMPLATE_ID = "template_nk63syt";
   const PUBLIC_KEY = "O0MMg_4DhC5NWV6B9";
-
-  const customId = { toastId: "custom-id-yes" };
 
   const sendEmail = (SERVICE_ID, TEMPLATE_ID, variables, PUBLIC_KEY) => {
     emailjs.send(SERVICE_ID, TEMPLATE_ID, variables, PUBLIC_KEY).then(
@@ -46,7 +45,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" id="contact">
+    <div className="contact py-5" id="contact">
       <div className="text-center">
         <h1>get in touch</h1>
         <p>
@@ -54,12 +53,12 @@ const Contact = () => {
           you as soon as posible.
         </p>
       </div>
-      <div className="container">
+      <div className="container ">
         <ToastContainer theme="dark" limit={5} />
         <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
             <div className="col-md-6 col-xs-12">
-              <div className="text-center">
+              <div className="input-fields text-center">
                 <input
                   type="text"
                   className="form-control"
@@ -82,10 +81,15 @@ const Contact = () => {
                   })}
                 />
                 <div className="line"></div>
+                {errors.name && (
+                  <span className="error-message">
+                    <MdOutlineError className="error-icon" />
+                    {errors.name.message}
+                  </span>
+                )}
               </div>
-              {errors.name && toast.error(errors.name.message)}
 
-              <div className="text-center">
+              <div className="input-fields text-center">
                 <input
                   type="text"
                   className="form-control"
@@ -106,10 +110,15 @@ const Contact = () => {
                   })}
                 />
                 <div className="line"></div>
+                {errors.phone && (
+                  <span className="error-message">
+                    <MdOutlineError className="error-icon" />
+                    {errors.phone.message}
+                  </span>
+                )}
               </div>
-              {errors.phone && toast.error(errors.phone.message)}
 
-              <div className="text-center">
+              <div className="input-fields text-center">
                 <input
                   type="text"
                   className="form-control"
@@ -126,10 +135,15 @@ const Contact = () => {
                   })}
                 />
                 <div className="line"></div>
+                {errors.email && (
+                  <span className="error-message">
+                    <MdOutlineError className="error-icon" />
+                    {errors.email.message}
+                  </span>
+                )}
               </div>
-              {errors.email && toast.error(errors.email.message)}
 
-              <div className="text-center">
+              <div className="input-fields text-center">
                 <input
                   type="text"
                   className="form-control"
@@ -150,12 +164,17 @@ const Contact = () => {
                   })}
                 />
                 <div className="line"></div>
+                {errors.subject && (
+                  <span className="error-message">
+                    <MdOutlineError className="error-icon" />
+                    {errors.subject.message}
+                  </span>
+                )}
               </div>
-              {errors.subject && toast.error(errors.subject.message)}
             </div>
 
             <div className="col-md-6 col-xs-12">
-              <div className="text-center">
+              <div className=" area-fields text-center">
                 <textarea
                   autocomplete="none"
                   onfocus="this.setAttribute('autocomplete', 'none')"
@@ -178,8 +197,14 @@ const Contact = () => {
                   })}
                 ></textarea>
                 <div className="line"></div>
+                {errors.message && (
+                  <span className="error-message">
+                    <MdOutlineError className="error-icon" />
+                    {errors.message.message}
+                  </span>
+                )}
               </div>
-              {errors.message && toast.error(errors.message.message)}
+
               <button className="btn-main-offer contact-btn" type="submit">
                 SEND
               </button>

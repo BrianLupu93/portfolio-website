@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import {
   FacebookShareButton,
@@ -10,6 +10,8 @@ import {
 } from "react-share";
 
 const Footer = () => {
+  const [windowWidth] = useState(window.screen.width);
+
   return (
     <div className="footer">
       <div className="container">
@@ -28,7 +30,12 @@ const Footer = () => {
           <div className="col-lg-3 col-md-2 col-sm-6 mt-3">
             <div className="row">
               <div className="col">
-                <Link to="home" smooth={true} className="footer-nav">
+                <Link
+                  to="home"
+                  smooth={true}
+                  offset={-102}
+                  className="footer-nav"
+                >
                   Home
                 </Link>
                 <br />
@@ -41,7 +48,12 @@ const Footer = () => {
                   About me
                 </Link>
                 <br />
-                <Link to="services" smooth={true} className="footer-nav">
+                <Link
+                  to="services"
+                  smooth={true}
+                  offset={windowWidth > 400 ? 158 : 190}
+                  className="footer-nav"
+                >
                   Services
                 </Link>
               </div>
@@ -55,11 +67,21 @@ const Footer = () => {
                   Experience
                 </Link>
                 <br />
-                <Link to="portfolio" smooth={true} className="footer-nav">
+                <Link
+                  to="portfolio"
+                  smooth={true}
+                  offset={148}
+                  className="footer-nav"
+                >
                   Portfolio
                 </Link>
                 <br />
-                <Link to="contact" smooth={true} className="footer-nav">
+                <Link
+                  to="contact"
+                  offset={windowWidth > 360 ? 148 : 172}
+                  smooth={true}
+                  className="footer-nav"
+                >
                   Contact
                 </Link>
               </div>

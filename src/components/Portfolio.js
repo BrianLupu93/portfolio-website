@@ -95,9 +95,9 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-wrapper">
-      <div className="container my-5">
-        <h1 className="text-uppercase text-center py-2">portfolio</h1>
-        <div className="image-box-wrapper  row  justify-content-center ">
+      <div className="container py-5">
+        <h1 className="text-uppercase text-center ">portfolio</h1>
+        <div className="image-box-wrapper pt-5 row  justify-content-center ">
           {portfolio?.map((item, i) => {
             return (
               <div
@@ -115,9 +115,14 @@ const Portfolio = () => {
                 />
 
                 <div className="d-flex justify-content-center mt-3">
-                  {item.icons.map((icon) => {
+                  {item.icons.map((icon, i) => {
                     return (
-                      <img src={icon} alt={icon} className="tech-icon mx-2" />
+                      <img
+                        key={i}
+                        src={icon}
+                        alt={icon}
+                        className="tech-icon mx-2"
+                      />
                     );
                   })}
                 </div>

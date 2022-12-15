@@ -7,7 +7,7 @@ import { RiShoppingCartLine } from "react-icons/ri";
 
 const Services = () => {
   return (
-    <div className="services">
+    <div className="services py-5">
       <h1 className="py-5">how can i help you?</h1>
       <div className="container">
         <div className="row">

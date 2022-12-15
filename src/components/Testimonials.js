@@ -30,9 +30,9 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="testimonials">
-      <h1>people testimonials</h1>
-      <div className="container">
+    <div className="testimonials py-5">
+      <h1 className="py-5">people testimonials</h1>
+      <div className="container ">
         <div className="testimonial-container">
           <TestimonialsCarousel clients={testimonials} />
         </div>

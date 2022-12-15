@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
 import logo from "../images/logo.png";
 
 const Navbar = () => {
+  const [windowWidth] = useState(window.screen.width);
+
   return (
     <nav className="navbar navbar-expand-xl  navbar-light  sticky-top">
       {/* <div className="container"> */}
@@ -46,7 +48,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link smooth={true} to="services" offset={108} className="nav-link">
+            <Link
+              smooth={true}
+              to="services"
+              offset={windowWidth > 400 ? 158 : 190}
+              className="nav-link"
+            >
               services
             </Link>
           </li>
@@ -64,14 +71,14 @@ const Navbar = () => {
             <Link
               smooth={true}
               to="portfolio"
-              offset={112}
+              offset={windowWidth > 360 ? 148 : 172}
               className="nav-link"
             >
               portfolio
             </Link>
           </li>
           <li className="nav-item">
-            <Link smooth={true} to="contact" className="nav-link">
+            <Link smooth={true} offset={-80} to="contact" className="nav-link">
               contact
             </Link>
           </li>
