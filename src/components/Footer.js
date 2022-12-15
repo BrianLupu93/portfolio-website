@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-center">
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex">
               <p>Timisoara, Romania</p>
@@ -25,7 +25,7 @@ const Footer = () => {
               <p>E-mail: brianlupu@gmail.com</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-2 col-sm-6">
+          <div className="col-lg-3 col-md-2 col-sm-6 mt-3">
             <div className="row">
               <div className="col">
                 <Link to="home" smooth={true} className="footer-nav">
@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
+          <div className="col-lg-5 col-md-5 col-sm-6 align-items-center mt-4">
             <div className="d-flex justify-content-center">
               <FacebookShareButton>
                 <FacebookIcon className="mx-3" size={36} />
