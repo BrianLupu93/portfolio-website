@@ -16,7 +16,7 @@ const Contact = () => {
   const TEMPLATE_ID = "template_nk63syt";
   const PUBLIC_KEY = "O0MMg_4DhC5NWV6B9";
 
-  // const notify = (message, type) => toast(message);
+  const customId = { toastId: "custom-id-yes" };
 
   const sendEmail = (SERVICE_ID, TEMPLATE_ID, variables, PUBLIC_KEY) => {
     emailjs.send(SERVICE_ID, TEMPLATE_ID, variables, PUBLIC_KEY).then(
@@ -55,8 +55,8 @@ const Contact = () => {
         </p>
       </div>
       <div className="container">
-        <ToastContainer theme="dark" />
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <ToastContainer theme="dark" limit={5} />
+        <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
             <div className="col-md-6 col-xs-12">
               <div className="text-center">
@@ -105,13 +105,13 @@ const Contact = () => {
                     },
                   })}
                 />
+                <div className="line"></div>
               </div>
-              <div className="line"></div>
               {errors.phone && toast.error(errors.phone.message)}
 
               <div className="text-center">
                 <input
-                  type="email"
+                  type="text"
                   className="form-control"
                   placeholder="E-mail"
                   {...register("email", {
@@ -157,6 +157,8 @@ const Contact = () => {
             <div className="col-md-6 col-xs-12">
               <div className="text-center">
                 <textarea
+                  autocomplete="none"
+                  onfocus="this.setAttribute('autocomplete', 'none')"
                   typeof="text"
                   className="form-control"
                   placeholder="Please describe shortly your project..."
