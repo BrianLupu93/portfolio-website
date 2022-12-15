@@ -51,7 +51,7 @@ const Navbar = () => {
             <Link
               smooth={true}
               to="services"
-              offset={windowWidth > 400 ? 158 : 190}
+              offset={windowWidth > 400 ? 158 : 180}
               className="nav-link"
             >
               services
