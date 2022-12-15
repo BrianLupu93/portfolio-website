@@ -55,7 +55,7 @@ const Contact = () => {
       </div>
       <div className="container ">
         <ToastContainer theme="dark" limit={5} />
-        <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
             <div className="col-md-6 col-xs-12">
               <div className="input-fields text-center">
@@ -176,8 +176,6 @@ const Contact = () => {
             <div className="col-md-6 col-xs-12">
               <div className=" area-fields text-center">
                 <textarea
-                  autocomplete="none"
-                  onfocus="this.setAttribute('autocomplete', 'none')"
                   typeof="text"
                   className="form-control"
                   placeholder="Please describe shortly your project..."

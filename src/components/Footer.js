@@ -33,7 +33,7 @@ const Footer = () => {
                 <Link
                   to="home"
                   smooth={true}
-                  offset={-102}
+                  offset={-400}
                   className="footer-nav"
                 >
                   Home
@@ -42,7 +42,7 @@ const Footer = () => {
                 <Link
                   to="about"
                   smooth={true}
-                  offset={-82}
+                  offset={windowWidth > 415 ? -82 : -307}
                   className="footer-nav"
                 >
                   About me
@@ -51,7 +51,7 @@ const Footer = () => {
                 <Link
                   to="services"
                   smooth={true}
-                  offset={windowWidth > 400 ? 158 : 190}
+                  offset={windowWidth > 415 ? 133 : -38}
                   className="footer-nav"
                 >
                   Services
@@ -61,7 +61,7 @@ const Footer = () => {
                 <Link
                   to="experience"
                   smooth={true}
-                  offset={-82}
+                  offset={windowWidth > 415 ? -84 : -307}
                   className="footer-nav"
                 >
                   Experience
@@ -70,7 +70,7 @@ const Footer = () => {
                 <Link
                   to="portfolio"
                   smooth={true}
-                  offset={148}
+                  offset={windowWidth > 415 ? 148 : -84}
                   className="footer-nav"
                 >
                   Portfolio
@@ -78,7 +78,7 @@ const Footer = () => {
                 <br />
                 <Link
                   to="contact"
-                  offset={windowWidth > 360 ? 148 : 172}
+                  offset={windowWidth > 415 ? -80 : -304}
                   smooth={true}
                   className="footer-nav"
                 >

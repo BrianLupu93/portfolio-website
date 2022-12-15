@@ -5,6 +5,7 @@ import logo from "../images/logo.png";
 
 const Navbar = () => {
   const [windowWidth] = useState(window.screen.width);
+  console.log(windowWidth);
 
   return (
     <nav className="navbar navbar-expand-xl  navbar-light  sticky-top">
@@ -14,7 +15,7 @@ const Navbar = () => {
           className="navbar-brand logo"
           smooth={true}
           to="home"
-          offset={-100}
+          offset={-400}
         >
           <img className="logo-img" src={logo} alt="logo" />
           <div className="logo-container">
@@ -26,8 +27,8 @@ const Navbar = () => {
       <button
         className="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -38,20 +39,36 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav  ml-auto ">
           <li className="nav-item active">
-            <Link smooth={true} to="home" offset={-100} className="nav-link">
+            <Link
+              smooth={true}
+              to="home"
+              offset={-400}
+              className="nav-link"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+            >
               home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link smooth={true} to="about" offset={-82} className="nav-link">
-              about me
             </Link>
           </li>
           <li className="nav-item">
             <Link
               smooth={true}
+              to="about"
+              offset={windowWidth > 415 ? -82 : -307}
+              className="nav-link"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+            >
+              about me
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              smooth={true}
               to="services"
-              offset={windowWidth > 400 ? 158 : 180}
+              offset={windowWidth > 415 ? 133 : -38}
               className="nav-link"
             >
               services
@@ -59,9 +76,11 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
               smooth={true}
               to="experience"
-              offset={-82}
+              offset={windowWidth > 415 ? -84 : -307}
               className="nav-link"
             >
               experience
@@ -69,16 +88,25 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
               smooth={true}
               to="portfolio"
-              offset={windowWidth > 360 ? 148 : 172}
+              offset={windowWidth > 415 ? 148 : -84}
               className="nav-link"
             >
               portfolio
             </Link>
           </li>
           <li className="nav-item">
-            <Link smooth={true} offset={-80} to="contact" className="nav-link">
+            <Link
+              smooth={true}
+              offset={windowWidth > 415 ? -80 : -304}
+              to="contact"
+              className="nav-link"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+            >
               contact
             </Link>
           </li>
