@@ -12,15 +12,15 @@ const TestimonialsCarousel = ({ clients }) => {
       showStatus={false}
       interval={2000}
     >
-      {clients?.map((client) => {
+      {clients?.map((client, i) => {
         return (
-          <>
+          <div key={i}>
             <img src={client.avatar} alt={client.name} />
             <div className="my-carousel">
               <h3>{client.name}</h3>
               <p>{client.body}</p>
             </div>
-          </>
+          </div>
         );
       })}
     </Carousel>
