@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Typed from "react-typed";
+import { Link } from "react-scroll";
 
 const Header = () => {
+  const [windowWidth] = useState(window.screen.width);
+
   return (
     <div className="header-wraper" id="home">
       <div className="main-info">
@@ -14,9 +17,15 @@ const Header = () => {
           strings={["Web Apps", "Mobile Apps", "Custom Design", "E-Commerce"]}
         />
 
-        <a href="#" className="btn-main-offer">
+        <Link
+          className="btn-main-offer"
+          duration={100}
+          smooth={true}
+          offset={windowWidth > 415 ? -80 : -80}
+          to="contact"
+        >
           Contact me
-        </a>
+        </Link>
       </div>
     </div>
   );

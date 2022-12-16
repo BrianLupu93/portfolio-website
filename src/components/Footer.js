@@ -75,7 +75,7 @@ const Footer = () => {
                   duration={100}
                   to="portfolio"
                   smooth={true}
-                  offset={windowWidth > 415 ? 148 : 142}
+                  offset={windowWidth > 415 ? 172 : 167}
                   className="footer-nav"
                 >
                   Portfolio

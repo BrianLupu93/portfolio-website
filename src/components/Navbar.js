@@ -5,7 +5,6 @@ import logo from "../images/logo.png";
 
 const Navbar = () => {
   const [windowWidth] = useState(window.screen.width);
-  console.log(windowWidth);
 
   return (
     <nav className="navbar navbar-expand-xl  navbar-light  sticky-top">
@@ -98,7 +97,7 @@ const Navbar = () => {
               data-bs-target="#navbarSupportedContent"
               smooth={true}
               to="portfolio"
-              offset={windowWidth > 415 ? 148 : -84}
+              offset={windowWidth > 415 ? 172 : -60}
               className="nav-link"
             >
               portfolio
