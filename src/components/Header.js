@@ -10,6 +10,9 @@ import letItSnow from "../songs/song.mp3";
 
 const Header = () => {
   const [windowWidth] = useState(window.screen.width);
+
+  // ---------------- ALL STUFF TO TEST ---------------
+
   const [musicPlay, setMusicPlay] = useState(null);
   const [value, setValue] = useState(0.01);
   const [playbackRate, setPlaybackRate] = useState(5);
@@ -20,6 +23,8 @@ const Header = () => {
   useEffect(() => {
     setVolume(value);
   }, [value]);
+
+  // ---------------- ALL STUFF TO TEST ---------------
 
   return (
     <div
