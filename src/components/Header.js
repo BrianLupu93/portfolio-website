@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import Typed from "react-typed";
 import { Link } from "react-scroll";
+import Snowfall from "react-snowfall";
 
 const Header = () => {
   const [windowWidth] = useState(window.screen.width);
 
   return (
     <div className="header-wraper" id="home">
+      <div>
+        <Snowfall />
+      </div>
       <div className="main-info">
         <h1>Design and Development Solutions</h1>
         <Typed
