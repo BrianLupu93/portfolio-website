@@ -13,28 +13,21 @@ const Header = () => {
 
   // ---------------- ALL STUFF TO TEST ---------------
 
-  const [musicPlay, setMusicPlay] = useState(null);
-  const [value, setValue] = useState(0.01);
-  const [playbackRate, setPlaybackRate] = useState(5);
-  const [volume, setVolume] = useState(value);
-  const [play, { pause }] = useSound(letItSnow, { volume });
+  // const [musicPlay, setMusicPlay] = useState(null);
+  // const [value, setValue] = useState(0.01);
+  // const [playbackRate, setPlaybackRate] = useState(5);
+  // const [volume, setVolume] = useState(value);
+  // const [play, { pause }] = useSound(letItSnow, { volume });
 
-  console.log(musicPlay);
-  useEffect(() => {
-    setVolume(value);
-  }, [value]);
+  // console.log(musicPlay);
+  // useEffect(() => {
+  //   setVolume(value);
+  // }, [value]);
 
   // ---------------- ALL STUFF TO TEST ---------------
 
   return (
-    <div
-      className="header-wraper"
-      id="home"
-      onScroll={() => {
-        setMusicPlay(true);
-        play();
-      }}
-    >
+    <div className="header-wraper" id="home">
       <div>
         <Snowfall />
       </div>
@@ -57,11 +50,11 @@ const Header = () => {
         >
           Contact me
         </Link>
-        <div className="music-player">
+        {/* <div className="music-player">
           <div className="music-player-btn-box">
             {/* ---------PAUSE------- */}
 
-            <button
+        {/* <button
               disabled={!musicPlay}
               className="music-player-btn"
               onClick={() => {
@@ -74,7 +67,7 @@ const Header = () => {
 
             {/* ---------PLAY------- */}
 
-            <button
+        {/* <button
               disabled={musicPlay}
               className="music-player-btn"
               onClick={() => {
@@ -83,10 +76,10 @@ const Header = () => {
               }}
             >
               <SlControlPlay className="music-icon" />
-            </button>
-          </div>
+          //   </button> */}
+        {/* </div> */}
 
-          <RangeSlider
+        {/* <RangeSlider
             min={0}
             max={0.3}
             step={0.01}
@@ -96,7 +89,7 @@ const Header = () => {
             value={value}
             onChange={(changeEvent) => setValue(changeEvent.target.value)}
           />
-        </div>
+        </div>   */}
       </div>
     </div>
   );
