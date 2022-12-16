@@ -22,6 +22,7 @@ body {
 .navbar {
   background: rgba(59, 59, 59, 0.9);
 }
+
 .logo-container {
   display: flex;
   justify-content: center;
@@ -118,6 +119,61 @@ nav ul li {
   font-weight: 300;
 }
 
+.music-player {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  border: 0.0625rem solid var(--primary-white);
+  padding: 0.5rem 1rem;
+  left: 88%;
+  top: 88%;
+  background-color: rgba(87, 87, 87, 0.5);
+  z-index: 10;
+}
+
+.music-player-btn {
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  border: 0.03rem solid var(--primary-white);
+}
+
+.music-player-btn:hover {
+  border: 0.03rem solid var(--primary-orange);
+}
+.music-player-btn:hover .music-icon {
+  color: var(--primary-orange);
+}
+.music-player-btn:disabled {
+  border: 0.03rem solid var(--primary-orange);
+}
+.music-player-btn:disabled .music-icon {
+  color: var(--primary-orange);
+}
+
+.music-player-btn-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.music-icon {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media (max-width: 768px) {
+  .music-player {
+    padding: 0.5rem 1rem;
+    left: auto;
+    top: 80%;
+    background-color: rgba(87, 87, 87, 0.5);
+    z-index: 10;
+  }
+}
 /* ----------------------- TYPED TEXT ------------------------------  */
 
 .typed-text {

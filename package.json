@@ -10,6 +10,7 @@
     "bootstrap": "^5.2.3",
     "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
+    "react-bootstrap-range-slider": "^3.0.8",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.40.0",
     "react-icons": "^4.7.1",
@@ -21,6 +22,7 @@
     "react-snowfall": "^1.2.1",
     "react-toastify": "^9.1.1",
     "react-typed": "^1.2.0",
+    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -34,9 +34,9 @@ const Services = () => {
       <h1 className="py-5">how can i help you?</h1>
       <div className="container">
         <div className="row">
-          {services?.map((service) => {
+          {services?.map((service, i) => {
             return (
-              <div className="col-lg-3 col-md-6 col-sm-6">
+              <div key={i} className="col-lg-3 col-md-6 col-sm-6">
                 <div className="box">
                   <IconContext.Provider value={{ size: "4em" }}>
                     <div className="circle">{service.icon}</div>

@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-xl  navbar-light  sticky-top">
       {/* <div className="container"> */}
-      <div className="navbar-brand logo">
+      <div className="navbar-brand logo ">
         <Link
           className="navbar-brand logo"
           smooth={true}
