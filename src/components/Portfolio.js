@@ -5,10 +5,14 @@ import imgPort3 from "../images/port3.jpg";
 import imgPort4 from "../images/port4.jpg";
 import imgPort5 from "../images/port5.jpg";
 import imgPort6 from "../images/port6.jpg";
+import imgPort7 from "../images/port7.jpg";
 import html from "../images/html.png";
 import css from "../images/css.png";
 import react from "../images/react.png";
 import js from "../images/js.png";
+import mongo from "../images/mongo.png";
+import node from "../images/node.png";
+import express from "../images/express.png";
 import { BsZoomIn } from "react-icons/bs";
 import Modal from "./Modal";
 
@@ -20,6 +24,17 @@ const Portfolio = () => {
   useEffect(() => {
     if (!openModal) {
       setPortfolio([
+        {
+          clicked: false,
+          title: "Web-Shop",
+          image: imgPort7,
+          description:
+            "Full-Stack App. I'm working on it, so maybe if you will check it, it will be possible to find functionality that does't work and others bugs. You can test the admin view with EMAIL: admin@email.com PWD: test123. The main focus of the App is the BackEnd, cause of that the FrontEnd design is very poor. When all the functionality will be done, all the data will be migrated on a MongoDB structure.",
+
+          link: "https://brianlupu93.github.io/online-shop",
+
+          icons: [react, node, express, mongo],
+        },
         {
           clicked: false,
           title: "Amazone Clone",

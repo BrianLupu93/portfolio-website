@@ -57,10 +57,23 @@ const Experience = () => {
               Back-End Bootcamp
               <br />
               Timisoara, Romania
-            </p>{" "}
+            </p>
           </div>
         </div>
         {/*  */}
+        <div className="timeline-block timeline-block-right">
+          <div className="marker"> </div>
+          <div className="timeline-content">
+            <h3>2023</h3>
+            <p>
+              Back-End Bootcamp Graduate
+              <br />
+              Node.js, Express.js, MongoDB
+              <br />
+              Timisoara, Romania
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

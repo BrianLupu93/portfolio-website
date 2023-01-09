@@ -28,7 +28,7 @@ const Modal = ({ open, setOpen, items }) => {
           <h3>{renderItem(items)?.title}</h3>
           <button onClick={closeModal}>X</button>
         </div>
-        <div className="modal-body">
+        <div className="modal-body px-5">
           <img
             className="portfolio-image-modal"
             src={renderItem(items)?.image}
