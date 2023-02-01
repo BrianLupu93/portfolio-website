@@ -296,7 +296,7 @@ nav ul li {
 
 .portfolio-wrapper {
   background: var(--primary-dark-gray);
-  padding: 2rem 18rem !important;
+  /* padding: 2rem 18rem !important; */
 }
 
 .portfolio-image-box {
