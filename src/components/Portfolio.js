@@ -6,6 +6,7 @@ import imgPort4 from "../images/port4.jpg";
 import imgPort5 from "../images/port5.jpg";
 import imgPort6 from "../images/port6.jpg";
 import imgPort7 from "../images/port7.jpg";
+
 import html from "../images/html.png";
 import css from "../images/css.png";
 import react from "../images/react.png";
@@ -15,6 +16,8 @@ import node from "../images/node.png";
 import express from "../images/express.png";
 import { BsZoomIn } from "react-icons/bs";
 import Modal from "./Modal";
+
+import PortfolioCarousel from "./PortfolioCarousel";
 
 const Portfolio = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -109,10 +112,10 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio-wrapper">
+    <div className="portfolio-wrapper py-5">
       <div>
-        <h1 className="text-uppercase text-center ">portfolio</h1>
-        <div className="image-box-wrapper pt-5 row  justify-content-center ">
+        <h1 className="text-uppercase text-center py5">portfolio</h1>
+        {/* <div className="image-box-wrapper pt-5 ">
           {portfolio?.map((item, i) => {
             return (
               <div
@@ -125,7 +128,7 @@ const Portfolio = () => {
 
                 <img
                   className="portfolio-image"
-                  src={item.image}
+                  src={monitor}
                   alt={item.title}
                 />
 
@@ -140,12 +143,17 @@ const Portfolio = () => {
                       />
                     );
                   })}
+               
                 </div>
                 <div className="overflow"></div>
                 <BsZoomIn className="portfolio-icon" />
               </div>
             );
           })}
+
+        </div> */}
+        <div className="portfolio-content">
+          <PortfolioCarousel items={portfolio} />
         </div>
       </div>
       <Modal open={openModal} setOpen={setOpenModal} items={portfolio} />

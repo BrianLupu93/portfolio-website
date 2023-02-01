@@ -15,7 +15,11 @@ const TestimonialsCarousel = ({ clients }) => {
       {clients?.map((client, i) => {
         return (
           <div key={i}>
-            <img src={client.avatar} alt={client.name} />
+            <img
+              className="testimonials-image"
+              src={client.avatar}
+              alt={client.name}
+            />
             <div className="my-carousel">
               <h3>{client.name}</h3>
               <p>{client.body}</p>
