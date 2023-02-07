@@ -18,10 +18,10 @@ const Footer = () => {
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex">
-              <p>Timisoara, Romania</p>
+              <p>91788, Pappenheim, Deutschland</p>
             </div>
             <div className="d-flex">
-              <a href="+40734253143">+(40)734 253 143 </a>
+              <a href="+491771859194">+(49) 1771859194 </a>
             </div>
             <div className="d-flex">
               <p>E-mail: brianlupu@gmail.com</p>
