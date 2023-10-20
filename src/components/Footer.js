@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -7,107 +7,100 @@ import {
   TwitterIcon,
   LinkedinShareButton,
   LinkedinIcon,
-} from "react-share";
+} from 'react-share';
 
 const Footer = () => {
   const [windowWidth] = useState(window.screen.width);
 
   return (
-    <div className="footer">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-4 col-md-6 col-sm-6">
-            <div className="d-flex">
-              <p>91788, Pappenheim, Deutschland</p>
+    <div className='footer'>
+      <div className='container'>
+        <div className='row justify-content-center'>
+          <div className='col-lg-4 col-md-6 col-sm-6'>
+            <div className='d-flex'>
+              <p>90111, Location, Country</p>
             </div>
-            <div className="d-flex">
-              <a href="+491771859194">+(49) 1771859194 </a>
+            <div className='d-flex'>
+              <a href='/'>+(49) 1771222444 </a>
             </div>
-            <div className="d-flex">
-              <p>E-mail: brianlupu@gmail.com</p>
+            <div className='d-flex'>
+              <p>E-mail: email@gmail.com</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-2 col-sm-6 mt-3">
-            <div className="row">
-              <div className="col">
+          <div className='col-lg-3 col-md-2 col-sm-6 mt-3'>
+            <div className='row'>
+              <div className='col'>
                 <Link
                   duration={100}
-                  to="home"
+                  to='home'
                   smooth={true}
                   offset={-400}
-                  className="footer-nav"
-                >
+                  className='footer-nav'>
                   Home
                 </Link>
                 <br />
                 <Link
                   duration={100}
-                  to="about"
+                  to='about'
                   smooth={true}
                   offset={windowWidth > 415 ? -82 : -40}
-                  className="footer-nav"
-                >
+                  className='footer-nav'>
                   About me
                 </Link>
                 <br />
                 <Link
                   duration={100}
-                  to="services"
+                  to='services'
                   smooth={true}
                   offset={windowWidth > 415 ? 133 : 190}
-                  className="footer-nav"
-                >
+                  className='footer-nav'>
                   Services
                 </Link>
               </div>
-              <div className="col">
+              <div className='col'>
                 <Link
                   duration={100}
-                  to="experience"
+                  to='experience'
                   smooth={true}
                   offset={windowWidth > 415 ? -84 : -70}
-                  className="footer-nav"
-                >
+                  className='footer-nav'>
                   Experience
                 </Link>
                 <br />
                 <Link
                   duration={100}
-                  to="portfolio"
+                  to='portfolio'
                   smooth={true}
                   offset={windowWidth > 415 ? 172 : 167}
-                  className="footer-nav"
-                >
+                  className='footer-nav'>
                   Portfolio
                 </Link>
                 <br />
                 <Link
                   duration={100}
-                  to="contact"
+                  to='contact'
                   offset={windowWidth > 415 ? -80 : -77}
                   smooth={true}
-                  className="footer-nav"
-                >
+                  className='footer-nav'>
                   Contact
                 </Link>
               </div>
             </div>
           </div>
-          <div className="col-lg-5 col-md-5 col-sm-6 align-items-center mt-4">
-            <div className="d-flex justify-content-center">
+          <div className='col-lg-5 col-md-5 col-sm-6 align-items-center mt-4'>
+            <div className='d-flex justify-content-center'>
               <FacebookShareButton>
-                <FacebookIcon className="mx-3" size={36} />
+                <FacebookIcon className='mx-3' size={36} />
               </FacebookShareButton>
               <TwitterShareButton>
-                <TwitterIcon className="mx-3" size={36} />
+                <TwitterIcon className='mx-3' size={36} />
               </TwitterShareButton>
               <LinkedinShareButton
-                url={"https://www.linkedin.com/in/brian-lupu-491171194"}
-              >
-                <LinkedinIcon className="mx-3" size={36} />
+                url={'https://www.linkedin.com/in/brian-lupu-491171194'}>
+                <LinkedinIcon className='mx-3' size={36} />
               </LinkedinShareButton>
             </div>
-            <p className="pt-3 text-center">
+            <p className='pt-3 text-center'>
               Copyright&copy;
               {new Date().getFullYear()}&nbsp;Brian Lupu Web development
             </p>
